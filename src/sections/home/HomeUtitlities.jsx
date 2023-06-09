@@ -13,7 +13,7 @@ function HomeUtitlities() {
               justifyContent="center"
               sx={{ pt: 4, pb: 2, display: { xs: 'none', lg: 'flex' }, position: 'relative' }}
             >
-              <Box component="img" src="/assets/images/phone_bg.png" sx={{ height: '500px', zIndex: 10 }} />
+              <Box component="img" src="/assets/images/phone_2.png" sx={{ height: '500px', zIndex: 10 }} />
               <Box
                 sx={{
                   height: '400px',
@@ -23,7 +23,7 @@ function HomeUtitlities() {
                   backgroundColor: '#fff',
                 }}
               />
-              <Box
+              {/* <Box
                 component="img"
                 src="/assets/images/football.png"
                 sx={{
@@ -35,7 +35,7 @@ function HomeUtitlities() {
                   border: '1.5px solid #00c187',
                   borderRadius: 1,
                 }}
-              />
+              /> */}
             </Stack>
             <Stack
               alignItems="center"

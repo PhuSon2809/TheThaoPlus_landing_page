@@ -30,7 +30,7 @@ function HomeIntro() {
             justifyContent="center"
             sx={{ py: 5, pl: 11.5, display: { xs: 'none', lg: 'flex' } }}
           >
-            <Box component="img" src="/assets/images/phone_bg.png" sx={{ height: '600px', zIndex: 10 }} />
+            <Box component="img" src="/assets/images/phone_1.png" sx={{ height: '600px', zIndex: 10 }} />
             <Box component="img" src="/assets/images/polygon.png" sx={{ height: '450px', position: 'absolute' }} />
           </Stack>
           <Stack
