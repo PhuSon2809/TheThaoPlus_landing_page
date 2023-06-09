@@ -20,3 +20,9 @@
   height: 100%;
   object-fit: cover;
 }
+
+.bg-image {
+  background-image: url('../public/assets/images/bg_owner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

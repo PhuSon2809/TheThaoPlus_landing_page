@@ -3,7 +3,7 @@ import { Box, Card, Container, Grid, Stack, Typography } from '@mui/material';
 function HomeReview() {
   return (
     <Box sx={{ backgroundColor: 'main.lighter' }}>
-      <Container sx={{ py: 10 }}>
+      <Container sx={{ pt: 10, pb: 12 }}>
         <Stack alignItems="center" justifyContent="center" gap={1} mb={5}>
           <Typography variant="h4" sx={{ textTransform: 'capitalize' }}>
             mọi người nghĩ gì về TheThaoPlus
