@@ -5,7 +5,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 function HomeUtitlities() {
   return (
     <Box sx={{ backgroundColor: 'main.lighter' }}>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" sx={{ py: 3 }}>
         <Grid container sx={{ py: 3 }} columnSpacing={10}>
           <Grid item md={6}>
             <Stack

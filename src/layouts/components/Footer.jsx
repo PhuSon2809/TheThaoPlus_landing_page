@@ -10,7 +10,7 @@ import { AppStore, GooglePlay } from 'src/_mock/icon';
 
 function Footer() {
   return (
-    <Box sx={{ backgroundColor: 'grey.300', mt: 15 }}>
+    <Box sx={{ backgroundColor: 'grey.200', mt: 7 }}>
       <Container>
         <Grid container spacing={7} sx={{ pb: 7 }}>
           <Grid item xs={12} md={6}>

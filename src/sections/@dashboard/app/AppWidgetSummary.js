@@ -1,11 +1,9 @@
 // @mui
-import PropTypes from 'prop-types';
+import { Box, Stack, Typography } from '@mui/material';
 import { alpha, styled } from '@mui/material/styles';
-import { Box, Card, Stack, Typography } from '@mui/material';
+import PropTypes from 'prop-types';
 // utils
-import { fShortenNumber } from '../../../utils/formatNumber';
 // components
-import Iconify from '../../../components/iconify';
 
 // ----------------------------------------------------------------------
 

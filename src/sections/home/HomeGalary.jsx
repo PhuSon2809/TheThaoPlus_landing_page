@@ -14,7 +14,7 @@ import './swiper.css';
 
 function HomeGalary() {
   return (
-    <Container sx={{ pb: 5 }}>
+    <Container sx={{ pb: 12 }}>
       <Stack alignItems="center" justifyContent="center" gap={1} mb={5}>
         <Typography variant="h4" sx={{ textTransform: 'capitalize' }}>
           giao diện thân thiện của chúng tôi
@@ -35,34 +35,31 @@ function HomeGalary() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/welcome.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/UserHome.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/ListStadium.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/stadium.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/detail.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/booking.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/bookingSuccess.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/Mybooking.png" />
         </SwiperSlide>
         <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Box component="img" src="/assets/images/UserHome.png" />
+          <Box component="img" src="/assets/images/galary/review.png" />
         </SwiperSlide>
       </Swiper>
     </Container>

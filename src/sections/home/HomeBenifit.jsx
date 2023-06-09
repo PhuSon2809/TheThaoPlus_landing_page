@@ -1,13 +1,14 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
-import React from 'react';
-import { AppWidgetSummary } from '../@dashboard/app';
-import WhereToVoteRoundedIcon from '@mui/icons-material/WhereToVoteRounded';
-import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import AccessAlarmIcon from '@mui/icons-material/AccessAlarm';
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
+import BrowserUpdatedIcon from '@mui/icons-material/BrowserUpdated';
+import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
+import MonetizationOnRoundedIcon from '@mui/icons-material/MonetizationOnRounded';
+import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { AppWidgetSummary } from '../@dashboard/app';
 
 function HomeBenifit() {
   return (
-    <Container sx={{ py: 15 }}>
+    <Container sx={{ py: 10 }}>
       <Stack alignItems="center" justifyContent="center" gap={1} mb={5}>
         <Typography variant="h4" sx={{ textTransform: 'capitalize' }}>
           để có cuộc sông tốt đẹp hơn
@@ -38,7 +39,7 @@ function HomeBenifit() {
             title="Không mất chi phí dịch vụ, nhưng rất nhiều lợi ích bổ sung."
             total="100% Miễn phí"
             color="secondary"
-            icon={<WhereToVoteRoundedIcon fontSize="large" />}
+            icon={<MonetizationOnRoundedIcon fontSize="large" />}
           />
         </Grid>
       </Grid>
@@ -49,7 +50,7 @@ function HomeBenifit() {
               title="Cập nhật tự động thông tin tìm kiếm hàng giờ."
               total="Cập nhật tự động"
               color="warning"
-              icon={<AccountTreeIcon fontSize="large" />}
+              icon={<BrowserUpdatedIcon fontSize="large" />}
             />
           </Grid>
           <Grid item xs={12} md={6}>
@@ -57,7 +58,7 @@ function HomeBenifit() {
               title="Cùng nhau tạo ra một lối sống lành mạnh chỉ trong vài bước."
               total="Sức khỏe"
               color="error"
-              icon={<WhereToVoteRoundedIcon fontSize="large" />}
+              icon={<FavoriteRoundedIcon fontSize="large" />}
             />
           </Grid>
         </Grid>

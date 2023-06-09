@@ -33,10 +33,10 @@ const MENU_OPTIONS = [
     title: 'Dành cho chủ sân',
     link: '/owner',
   },
-  {
-    title: 'Liên hệ',
-    link: '/',
-  },
+  // {
+  //   title: 'Liên hệ',
+  //   link: '/',
+  // },
 ];
 
 // ----------------------------------------------------------------------
