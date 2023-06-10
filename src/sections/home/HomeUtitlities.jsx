@@ -42,7 +42,7 @@ function HomeUtitlities() {
               justifyContent="center"
               sx={{ py: 2, display: { xs: 'inline-flex', lg: 'none' } }}
             >
-              <Box component="img" src="/assets/images/phone_bg.png" sx={{ height: '500px', zIndex: 10 }} />
+              <Box component="img" src="/assets/images/phone_2.png" sx={{ height: '500px', zIndex: 10 }} />
               <Box component="img" src="/assets/images/polygon.png" sx={{ height: '350px', position: 'absolute' }} />
             </Stack>
           </Grid>

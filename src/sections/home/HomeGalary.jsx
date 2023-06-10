@@ -33,6 +33,20 @@ function HomeGalary() {
         }}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
+        breakpoints={{
+          '@0.00': {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          '@0.75': {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          '@1.00': {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+        }}
       >
         <SwiperSlide>
           <Box component="img" src="/assets/images/galary/welcome.png" />

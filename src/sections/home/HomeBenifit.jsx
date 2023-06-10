@@ -17,7 +17,7 @@ function HomeBenifit() {
           Mọi người đều xứng đáng có được trải nghiệm sống tốt hơn.
         </Typography>
       </Stack>
-      <Grid container columnSpacing={5}>
+      <Grid container spacing={5}>
         <Grid item xs={12} md={4}>
           <AppWidgetSummary
             title="Tất cả các môn thể thao bạn muốn, đều có trong TheThaoPlus. "
@@ -43,7 +43,7 @@ function HomeBenifit() {
           />
         </Grid>
       </Grid>
-      <Box sx={{ px: 24.8 }}>
+      <Box sx={{ px: { xs: 0, md: 24.8 } }}>
         <Grid container columnSpacing={5} mt={5}>
           <Grid item xs={12} md={6}>
             <AppWidgetSummary
@@ -53,7 +53,7 @@ function HomeBenifit() {
               icon={<BrowserUpdatedIcon fontSize="large" />}
             />
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{ pt: { xs: 5, md: 0 } }}>
             <AppWidgetSummary
               title="Cùng nhau tạo ra một lối sống lành mạnh chỉ trong vài bước."
               total="Sức khỏe"
