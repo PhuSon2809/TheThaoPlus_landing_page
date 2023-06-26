@@ -17,16 +17,19 @@ function OwnerSlide() {
             </Typography>
             <Stack direction="row" mt={2}>
               <Button
+                component="a"
+                href="https://thethaoplus-supplier.vercel.app/login"
                 variant="contained"
                 startIcon={<ArrowRightAltIcon />}
                 sx={{
+                  color: '#fff',
                   backgroundColor: '#00C187',
                   '&:hover': {
                     backgroundColor: '#30ca9c',
                   },
                 }}
               >
-                <a href="https://thethaoplus-supplier.vercel.app/login"> Đăng ký ngay</a>
+                Đăng ký ngay
               </Button>
             </Stack>
           </Stack>
