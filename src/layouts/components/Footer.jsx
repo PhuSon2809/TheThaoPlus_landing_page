@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
+import { Box, Button, Container, Dialog, DialogActions, DialogContent, Grid, Stack, Typography } from '@mui/material';
 import React from 'react';
 import Logo from 'src/components/logo/Logo';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -7,8 +7,11 @@ import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 import FeedbackRoundedIcon from '@mui/icons-material/FeedbackRounded';
 import AccessTimeFilledRoundedIcon from '@mui/icons-material/AccessTimeFilledRounded';
 import { AppStore, GooglePlay } from 'src/_mock/icon';
+import { useModal } from 'src/hooks/useModal';
 
 function Footer() {
+  const { toogleOpen, isOpen } = useModal();
+
   return (
     <Box sx={{ backgroundColor: 'grey.200', mt: 7 }}>
       <Container>
@@ -29,8 +32,12 @@ function Footer() {
             </Typography>
 
             <Stack direction="row" alignItems="center" gap={2} mt={2}>
-              <GooglePlay />
-              <AppStore />
+              <Button onClick={toogleOpen}>
+                <GooglePlay />
+              </Button>
+              <Button onClick={toogleOpen}>
+                <AppStore />
+              </Button>
             </Stack>
           </Grid>
 
@@ -66,6 +73,29 @@ function Footer() {
           Copyright 2023 @TheThaoPlus
         </Typography>
       </Stack>
+
+      {isOpen && (
+        <Dialog
+          sx={{
+            '.css-1t1j96h-MuiPaper-root-MuiDialog-paper': {
+              width: '300px',
+              maxWidth: '300px',
+            },
+          }}
+          open={isOpen}
+          onClose={toogleOpen}
+        >
+          <DialogContent sx={{ width: '100%' }}>
+            <Typography variant="h5">App đang trong thời gian xử lý và deploy!</Typography>
+            <Typography variant="subtitle1">Bạn hãy trở lại với TheThaoPlus nhé.</Typography>
+          </DialogContent>
+          <DialogActions>
+            <Button variant="contained" color="secondary" size="small" onClick={toogleOpen}>
+              Đóng
+            </Button>
+          </DialogActions>
+        </Dialog>
+      )}
     </Box>
   );
 }
