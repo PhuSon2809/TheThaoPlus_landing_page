@@ -26,7 +26,7 @@ function OwnerSlide() {
                   },
                 }}
               >
-                Đăng ký ngay
+                <a href="https://thethaoplus-supplier.vercel.app/login"> Đăng ký ngay</a>
               </Button>
             </Stack>
           </Stack>
